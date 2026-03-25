@@ -117,7 +117,7 @@ export default function Resume() {
               </h3>
               <div>
                 <h4 className="font-serif text-xl font-bold text-[#1A1A1A]">High School</h4>
-                <p className="font-mono text-xs text-[#8E8A83] mb-2">Minneapolis, MN • 10th Grade (Sophomore)</p>
+                <p className="font-mono text-xs text-[#8E8A83] mb-2">Minneapolis, MN • 9th Grade (Freshman)</p>
                 <p className="font-sans text-sm text-[#4A4A4A] font-bold">Honor Roll Student</p>
               </div>
             </div>

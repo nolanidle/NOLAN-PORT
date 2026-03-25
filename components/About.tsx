@@ -32,7 +32,7 @@ export default function About() {
 
             <div className="font-sans text-lg md:text-xl text-[#4A4A4A] leading-relaxed space-y-6">
               <p>
-                I&apos;m Nolan &mdash; a 15-year-old sophomore from Minneapolis, Minnesota. I spend a good
+                I&apos;m Nolan &mdash; a 15-year-old freshman from Minneapolis, Minnesota. I spend a good
                 chunk of my free time learning about programming, building projects, and trying to understand
                 how computers actually work at the lowest level.
               </p>
@@ -105,7 +105,7 @@ export default function About() {
                 </li>
                 <li className="flex flex-col gap-1">
                   <span className="text-[#8E8A83] uppercase tracking-wider text-xs">Education</span>
-                  <span className="text-[#1A1A1A] font-bold text-base">10th Grade &mdash; Sophomore</span>
+                  <span className="text-[#1A1A1A] font-bold text-base">9th Grade &mdash; Freshman</span>
                 </li>
                 <li className="flex flex-col gap-1">
                   <span className="text-[#8E8A83] uppercase tracking-wider text-xs">Academic Standing</span>

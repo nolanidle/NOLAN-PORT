@@ -20,7 +20,7 @@ export default function Experience() {
       period: '2026 — Now',
       highlight: true,
       events: [
-        { title: 'Sophomore Year', detail: 'Minneapolis, MN — Honor Roll', tag: 'Academic' },
+        { title: 'Freshman Year', detail: 'Minneapolis, MN — Honor Roll', tag: 'Academic' },
         { title: 'BulletPROOF', detail: 'Approaching beta launch', tag: 'Project' },
         { title: 'RIFT & IDLE', detail: 'Active development continues', tag: 'Project' },
       ],
@@ -39,7 +39,7 @@ export default function Experience() {
       highlight: false,
       events: [
         { title: 'BulletPROOF Started', detail: 'First major AI-powered project', tag: 'Project' },
-        { title: 'Freshman Year', detail: 'Honor Roll — first year of high school', tag: 'Academic' },
+        { title: 'Middle School', detail: 'Honor Roll', tag: 'Academic' },
         { title: 'JavaScript Deep Dive', detail: 'Moved beyond basics into real projects', tag: 'Learning' },
       ],
     },
