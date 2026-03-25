@@ -1,0 +1,8 @@
+name = "nolan-port"
+compatibility_date = "2024-04-03"
+pages_build_output_dir = ".next"
+
+[[services]]
+binding = "WORKER_SELF_REFERENCE"
+service = "nolan-port"
+
