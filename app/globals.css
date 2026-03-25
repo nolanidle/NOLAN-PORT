@@ -15,13 +15,22 @@
   --color-warm: var(--theme-color-warm);
 }
 
-:root, .dark {
-  --theme-color-ink: #FFFFFF;
-  --theme-color-paper: #000000;
-  --theme-color-accent: #3B82F6; /* Vercel/Linear Blue */
-  --theme-color-muted: #A1A1AA;
-  --theme-color-border: #27272A;
-  --theme-color-warm: #09090B;
+:root {
+  --theme-color-ink: #1A1A1A;
+  --theme-color-paper: #F5F2ED;
+  --theme-color-accent: #FF4E00;
+  --theme-color-muted: #8E8A83;
+  --theme-color-border: #D1CDC4;
+  --theme-color-warm: #EAE5D9;
+}
+
+.dark {
+  --theme-color-ink: #E2E8F0; /* Slate foreground */
+  --theme-color-paper: #0B1120; /* Deep Blueprint background */
+  --theme-color-accent: #00F0FF; /* Neon Cyan */
+  --theme-color-muted: #475569;
+  --theme-color-border: #1E293B; /* Cyan-ish border */
+  --theme-color-warm: #0F172A;
 }
 
 @layer utilities {
@@ -51,18 +60,13 @@
   }
   
   .editorial-border {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(12px);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease;
+    border: 1px solid var(--color-border);
+    box-shadow: 4px 4px 0px 0px var(--color-ink);
   }
   
   .editorial-border-hover:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
-    border-color: rgba(255, 255, 255, 0.2);
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px 0px var(--color-ink);
   }
 
   /* Section label style */
@@ -88,21 +92,19 @@
     align-items: center;
     gap: 0.4rem;
     padding: 0.3rem 0.7rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 999px;
+    border: 1px solid var(--color-border);
+    background: var(--color-paper);
     font-family: var(--font-mono);
     font-size: 0.7rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--color-ink);
-    transition: all 0.2s;
+    transition: border-color 0.2s, background 0.2s;
   }
 
   .chip:hover {
     border-color: var(--color-accent);
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 15px var(--color-accent);
+    background: var(--color-warm);
   }
 
   /* Timeline dot */
@@ -117,12 +119,12 @@
 
   /* Hover lift effect */
   .hover-lift {
-    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
   }
 
   .hover-lift:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+    transform: translate(-3px, -3px);
+    box-shadow: 7px 7px 0px 0px var(--color-ink);
   }
 
   /* Smooth underline on links */
