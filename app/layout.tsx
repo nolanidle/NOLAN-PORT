@@ -1,6 +1,10 @@
 import type { Metadata } from 'next';
 import { Playfair_Display, Inter, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
+import { ThemeProvider } from '@/components/theme-provider';
+import NoiseOverlay from '@/components/noise-overlay';
+import CustomCursor from '@/components/custom-cursor';
+import Terminal from '@/components/terminal';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -27,9 +31,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${inter.variable} ${jetbrainsMono.variable} scroll-smooth`}>
-      <body className="font-sans bg-[#F5F2ED] text-[#1A1A1A] antialiased selection:bg-[#FF4E00] selection:text-white" suppressHydrationWarning>
-        {children}
+    <html lang="en" className={`${playfair.variable} ${inter.variable} ${jetbrainsMono.variable} scroll-smooth`} suppressHydrationWarning>
+      <body className="font-sans bg-paper text-ink antialiased selection:bg-accent selection:text-white" suppressHydrationWarning>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <NoiseOverlay />
+          <CustomCursor />
+          <Terminal />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -1,16 +1,36 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-serif), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-mono: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   
-  --color-ink: #1A1A1A;
-  --color-paper: #F5F2ED;
-  --color-accent: #FF4E00;
-  --color-muted: #8E8A83;
-  --color-border: #D1CDC4;
-  --color-warm: #EAE5D9;
+  --color-ink: var(--theme-color-ink);
+  --color-paper: var(--theme-color-paper);
+  --color-accent: var(--theme-color-accent);
+  --color-muted: var(--theme-color-muted);
+  --color-border: var(--theme-color-border);
+  --color-warm: var(--theme-color-warm);
+}
+
+:root {
+  --theme-color-ink: #1A1A1A;
+  --theme-color-paper: #F5F2ED;
+  --theme-color-accent: #FF4E00;
+  --theme-color-muted: #8E8A83;
+  --theme-color-border: #D1CDC4;
+  --theme-color-warm: #EAE5D9;
+}
+
+.dark {
+  --theme-color-ink: #E2E8F0; /* Slate foreground */
+  --theme-color-paper: #0B1120; /* Deep Blueprint background */
+  --theme-color-accent: #00F0FF; /* Neon Cyan */
+  --theme-color-muted: #475569;
+  --theme-color-border: #1E293B; /* Cyan-ish border */
+  --theme-color-warm: #0F172A;
 }
 
 @layer utilities {

@@ -1,20 +1,18 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import About from '@/components/About';
+import AboutBento from '@/components/AboutBento';
 import Projects from '@/components/Projects';
-import Skills from '@/components/Skills';
 import Experience from '@/components/Experience';
 import Resume from '@/components/Resume';
 import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#F5F2ED] text-[#1A1A1A]">
+    <main className="min-h-screen bg-paper text-ink transition-colors duration-300">
       <Navbar />
       <Hero />
-      <About />
+      <AboutBento />
       <Projects />
-      <Skills />
       <Experience />
       <Resume />
       <Footer />
