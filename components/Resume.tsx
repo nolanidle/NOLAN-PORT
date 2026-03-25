@@ -47,7 +47,7 @@ export default function Resume() {
               </p>
             </div>
             <div className="font-mono text-xs text-[#4A4A4A] text-right space-y-1">
-              <p>Minneapolis, MN</p>
+              <p>Maple Grove, MN</p>
               <p>nolan@nolan.astroyds.com</p>
               <p>github.com/nolanidle</p>
             </div>
@@ -59,7 +59,7 @@ export default function Resume() {
               Summary
             </h3>
           <p className="font-sans text-base text-[#4A4A4A] leading-relaxed">
-            Self-taught software developer, 15 years old, with a focus on JavaScript, Python, and systems programming. Creator of BulletPROOF, an AI-powered news verification engine currently in alpha. I enjoy exploring low-level computing, CPU architecture, and building things from scratch to understand how they work. Currently balancing high school academics (Honor Roll) and independent software development. The problem-solving mindset I've developed directly applies to fast-paced professional environments, customer support, and logic-based operations.
+            Self-taught software developer, 15 years old, with a focus on JavaScript, Python, and systems programming. Creator of BulletPROOF, an AI-powered news verification engine currently in alpha. I enjoy exploring low-level computing, CPU architecture, and building things from scratch to understand how they work. Currently balancing high school academics (3.96 Unweighted GPA) and independent software development. The problem-solving mindset I've developed directly applies to fast-paced professional environments, customer support, and logic-based operations.
           </p>
           </div>
 
@@ -116,9 +116,9 @@ export default function Resume() {
                 Education
               </h3>
               <div>
-                <h4 className="font-serif text-xl font-bold text-[#1A1A1A]">High School</h4>
-                <p className="font-mono text-xs text-[#8E8A83] mb-2">Minneapolis, MN • 9th Grade (Freshman)</p>
-                <p className="font-sans text-sm text-[#4A4A4A] font-bold">Honor Roll Student</p>
+                <h4 className="font-serif text-xl font-bold text-[#1A1A1A]">Maple Grove Senior High School</h4>
+                <p className="font-mono text-xs text-[#8E8A83] mb-2">Maple Grove, MN • 9th Grade (Freshman)</p>
+                <p className="font-sans text-sm text-[#4A4A4A] font-bold">3.96 Unweighted GPA</p>
               </div>
             </div>
 

@@ -40,7 +40,7 @@ export default function AboutBento() {
             <div className="z-10 relative">
                <h3 className="font-serif text-4xl font-bold mb-4 text-ink">I'm Nolan.</h3>
                <p className="font-sans text-muted text-lg text-balance mb-4">
-                 A 15-year-old systems programming enthusiast, builder, and language creator based in Minneapolis.
+                 A 15-year-old systems programming enthusiast, builder, and language creator based in Maple Grove.
                  I build things from scratch to figure out how they work. My goal isn't just to write code, but to understand the machine underneath it all.
                </p>
             </div>
@@ -58,7 +58,7 @@ export default function AboutBento() {
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once:true }} transition={{ delay: 0.1 }}
           >
             <Globe className="absolute -left-6 -top-6 text-border opacity-20 group-hover:rotate-180 transition-transform duration-1000" size={120} />
-            <h4 className="font-mono text-xs uppercase tracking-widest text-muted mb-2 z-10">Minneapolis, MN</h4>
+            <h4 className="font-mono text-xs uppercase tracking-widest text-muted mb-2 z-10">Maple Grove, MN</h4>
             <div className="z-10"><LiveClock /></div>
             <div className="w-full h-[1px] bg-border my-4 z-10" />
             <h4 className="font-mono text-xs uppercase tracking-widest text-muted z-10">Local Status</h4>

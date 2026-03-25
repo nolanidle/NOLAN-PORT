@@ -66,7 +66,7 @@ export default function Footer() {
             <div className="text-left md:text-right mb-12 md:mb-0">
               <h3 className="font-serif text-2xl font-bold mb-3 text-[#F5F2ED]">Nolan Idle</h3>
               <p className="font-mono text-xs uppercase tracking-widest text-[#8E8A83]">
-                Minneapolis, Minnesota<br />
+                Maple Grove, Minnesota<br />
                 Est. 2011
               </p>
 
