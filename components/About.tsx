@@ -13,7 +13,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-32 bg-[#EAE5D9] relative border-y border-[#D1CDC4]">
+    <section id="about" className="py-32 bg-warm relative border-y border-border">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
 
@@ -26,10 +26,10 @@ export default function About() {
             className="lg:col-span-8"
           >
             <span className="section-label">About Me</span>
-            <h2 className="font-serif text-5xl md:text-7xl font-bold tracking-tighter text-[#1A1A1A] mb-8">
+            <h2 className="font-serif text-5xl md:text-7xl font-bold tracking-tighter text-ink mb-8">
               Still figuring it out.
             </h2>
-            <div className="font-sans text-lg md:text-xl text-[#4A4A4A] leading-relaxed space-y-6">
+            <div className="font-sans text-lg md:text-xl text-muted leading-relaxed space-y-6">
               <p>
                 I&apos;m Nolan &mdash; a 15-year-old freshman from Maple Grove, Minnesota. I spend a good
                 chunk of my free time learning about programming, building projects, and trying to understand
@@ -57,7 +57,7 @@ export default function About() {
 
             {/* Interests chips */}
             <div className="mt-12">
-              <span className="font-mono text-xs uppercase tracking-widest text-[#8E8A83] mb-4 block">
+              <span className="font-mono text-xs uppercase tracking-widest text-muted mb-4 block">
                 Things I care about
               </span>
               <div className="flex flex-wrap gap-3">
@@ -66,7 +66,7 @@ export default function About() {
                     key={item.label}
                     className="chip"
                   >
-                    <span className="text-[#FF4E00]">{item.icon}</span>
+                    <span className="text-accent">{item.icon}</span>
                     {item.label}
                   </div>
                 ))}
@@ -75,7 +75,7 @@ export default function About() {
 
             <div className="mt-10 flex items-center gap-4">
               <span className="ink-stamp">Honor Roll</span>
-              <span className="ink-stamp border-[#1A1A1A] text-[#1A1A1A]">Athlete</span>
+              <span className="ink-stamp border-ink text-ink">Athlete</span>
             </div>
           </motion.div>
 
@@ -88,49 +88,49 @@ export default function About() {
             className="lg:col-span-4 flex flex-col gap-6"
           >
             {/* Quick Facts */}
-            <div className="bg-[#F5F2ED] p-8 editorial-border">
-              <h3 className="font-mono text-sm uppercase tracking-widest text-[#FF4E00] mb-8 ruled-line pb-2">
+            <div className="bg-paper p-8 editorial-border">
+              <h3 className="font-mono text-sm uppercase tracking-widest text-accent mb-8 ruled-line pb-2">
                 Quick Facts
               </h3>
 
               <ul className="space-y-5 font-mono text-sm">
                 <li className="flex flex-col gap-1">
-                  <span className="text-[#8E8A83] uppercase tracking-wider text-xs">Age</span>
-                  <span className="text-[#1A1A1A] font-bold text-base">15</span>
+                  <span className="text-muted uppercase tracking-wider text-xs">Age</span>
+                  <span className="text-ink font-bold text-base">15</span>
                 </li>
                 <li className="flex flex-col gap-1">
-                  <span className="text-[#8E8A83] uppercase tracking-wider text-xs">Location</span>
-                  <span className="text-[#1A1A1A] font-bold text-base">Maple Grove, MN</span>
+                  <span className="text-muted uppercase tracking-wider text-xs">Location</span>
+                  <span className="text-ink font-bold text-base">Maple Grove, MN</span>
                 </li>
                 <li className="flex flex-col gap-1">
-                  <span className="text-[#8E8A83] uppercase tracking-wider text-xs">Education</span>
-                  <span className="text-[#1A1A1A] font-bold text-base">9th Grade &mdash; Freshman</span>
+                  <span className="text-muted uppercase tracking-wider text-xs">Education</span>
+                  <span className="text-ink font-bold text-base">9th Grade &mdash; Freshman</span>
                 </li>
                 <li className="flex flex-col gap-1">
-                  <span className="text-[#8E8A83] uppercase tracking-wider text-xs">Academic Standing</span>
-                  <span className="text-[#1A1A1A] font-bold text-base">3.96 Unweighted GPA</span>
+                  <span className="text-muted uppercase tracking-wider text-xs">Academic Standing</span>
+                  <span className="text-ink font-bold text-base">3.96 Unweighted GPA</span>
                 </li>
                 <li className="flex flex-col gap-1">
-                  <span className="text-[#8E8A83] uppercase tracking-wider text-xs">Sports</span>
-                  <span className="text-[#1A1A1A] font-bold text-base">Track & Cross Country</span>
+                  <span className="text-muted uppercase tracking-wider text-xs">Sports</span>
+                  <span className="text-ink font-bold text-base">Track & Cross Country</span>
                 </li>
                 <li className="flex flex-col gap-1">
-                  <span className="text-[#8E8A83] uppercase tracking-wider text-xs">Primary Languages</span>
-                  <span className="text-[#1A1A1A] font-bold text-base">JavaScript, Python</span>
+                  <span className="text-muted uppercase tracking-wider text-xs">Primary Languages</span>
+                  <span className="text-ink font-bold text-base">JavaScript, Python</span>
                 </li>
                 <li className="flex flex-col gap-1">
-                  <span className="text-[#8E8A83] uppercase tracking-wider text-xs">Currently Exploring</span>
-                  <span className="text-[#1A1A1A] font-bold text-base">CPU Architecture</span>
+                  <span className="text-muted uppercase tracking-wider text-xs">Currently Exploring</span>
+                  <span className="text-ink font-bold text-base">CPU Architecture</span>
                 </li>
               </ul>
             </div>
 
             {/* Currently Learning */}
-            <div className="bg-[#F5F2ED] p-8 editorial-border">
-              <h3 className="font-mono text-sm uppercase tracking-widest text-[#FF4E00] mb-6 ruled-line pb-2">
+            <div className="bg-paper p-8 editorial-border">
+              <h3 className="font-mono text-sm uppercase tracking-widest text-accent mb-6 ruled-line pb-2">
                 Currently Learning
               </h3>
-              <ul className="space-y-3 font-mono text-sm text-[#4A4A4A]">
+              <ul className="space-y-3 font-mono text-sm text-muted">
                 {[
                   'Compiler design & lexer theory',
                   'CPU instruction set architectures',
@@ -139,7 +139,7 @@ export default function About() {
                   'OS scheduling concepts',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2">
-                    <span className="text-[#FF4E00] mt-0.5 flex-shrink-0">&rarr;</span>
+                    <span className="text-accent mt-0.5 flex-shrink-0">&rarr;</span>
                     <span>{item}</span>
                   </li>
                 ))}

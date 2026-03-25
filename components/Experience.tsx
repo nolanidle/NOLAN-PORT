@@ -55,15 +55,15 @@ export default function Experience() {
   ];
 
   const tagColors: Record<string, string> = {
-    Academic: 'bg-[#1A1A1A] text-[#F5F2ED]',
-    Athletic: 'bg-[#FF4E00] text-white',
-    Project: 'bg-[#EAE5D9] text-[#1A1A1A] border border-[#D1CDC4]',
-    Learning: 'bg-[#F5F2ED] text-[#8E8A83] border border-[#D1CDC4]',
-    Research: 'bg-[#F5F2ED] text-[#8E8A83] border border-[#D1CDC4]',
+    Academic: 'bg-ink text-paper',
+    Athletic: 'bg-accent text-white',
+    Project: 'bg-warm text-ink border border-border',
+    Learning: 'bg-paper text-muted border border-border',
+    Research: 'bg-paper text-muted border border-border',
   };
 
   return (
-    <section id="experience" className="py-32 bg-[#F5F2ED] pattern-dots">
+    <section id="experience" className="py-32 bg-paper pattern-dots">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -73,10 +73,10 @@ export default function Experience() {
           className="mb-20"
         >
           <span className="section-label">Background</span>
-          <h2 className="font-serif text-5xl md:text-7xl font-bold tracking-tighter text-[#1A1A1A] mb-4">
+          <h2 className="font-serif text-5xl md:text-7xl font-bold tracking-tighter text-ink mb-4">
             The Journey So Far
           </h2>
-          <p className="font-sans text-lg text-[#4A4A4A] max-w-2xl">
+          <p className="font-sans text-lg text-muted max-w-2xl">
             I&apos;m still early in the story. Here&apos;s what the path has looked like so far.
           </p>
         </motion.div>
@@ -92,20 +92,20 @@ export default function Experience() {
               transition={{ duration: 0.6, delay: blockIndex * 0.12 }}
               className={`relative p-8 editorial-border hover-lift ${
                 block.highlight
-                  ? 'bg-[#1A1A1A] text-[#F5F2ED]'
-                  : 'bg-white text-[#1A1A1A]'
+                  ? 'bg-ink text-paper'
+                  : 'bg-warm text-ink'
               }`}
             >
               {/* Period label */}
               <div
                 className={`font-mono text-xs uppercase tracking-widest mb-6 pb-4 border-b font-bold ${
-                  block.highlight ? 'text-[#FF4E00] border-[#333]' : 'text-[#FF4E00] border-[#D1CDC4]'
+                  block.highlight ? 'text-accent border-[#333]' : 'text-accent border-border'
                 }`}
               >
                 {block.highlight && (
                   <span className="relative inline-flex h-2 w-2 mr-2 align-middle">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FF4E00] opacity-75" />
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#FF4E00]" />
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-accent" />
                   </span>
                 )}
                 {block.period}
@@ -117,18 +117,18 @@ export default function Experience() {
                   <li key={i} className="flex flex-col gap-1.5">
                     <span
                       className={`font-sans text-sm font-semibold leading-snug ${
-                        block.highlight ? 'text-[#F5F2ED]' : 'text-[#1A1A1A]'
+                        block.highlight ? 'text-paper' : 'text-ink'
                       }`}
                     >
                       {event.title}
                     </span>
-                    <span className="font-mono text-xs text-[#8E8A83] leading-relaxed">
+                    <span className="font-mono text-xs text-muted leading-relaxed">
                       {event.detail}
                     </span>
                     {event.tag && (
                       <span
                         className={`self-start font-mono text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-sm ${
-                          tagColors[event.tag] ?? 'bg-[#EAE5D9] text-[#1A1A1A]'
+                          tagColors[event.tag] ?? 'bg-warm text-ink'
                         }`}
                       >
                         {event.tag}
@@ -147,7 +147,7 @@ export default function Experience() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="font-mono text-xs text-[#8E8A83] uppercase tracking-wider mt-10 text-center"
+          className="font-mono text-xs text-muted uppercase tracking-wider mt-10 text-center"
         >
           More chapters being written every day.
         </motion.p>

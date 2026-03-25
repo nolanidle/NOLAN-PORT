@@ -27,7 +27,7 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 border-b ${
-        isScrolled ? 'bg-[#F5F2ED]/90 backdrop-blur-md border-[#D1CDC4] py-3' : 'bg-transparent border-transparent py-5'
+        isScrolled ? 'bg-paper/90 backdrop-blur-md border-border py-3' : 'bg-transparent border-transparent py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
@@ -41,7 +41,7 @@ export default function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="text-sm font-mono uppercase tracking-widest text-[#4A4A4A] hover:text-[#FF4E00] transition-colors"
+              className="text-sm font-mono uppercase tracking-widest text-muted hover:text-accent transition-colors"
             >
               {link.name}
             </a>
@@ -50,7 +50,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Toggle */}
         <button
-          className="md:hidden text-[#1A1A1A]"
+          className="md:hidden text-ink"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -63,14 +63,14 @@ export default function Navbar() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="absolute top-full left-0 w-full bg-[#F5F2ED] border-b border-[#D1CDC4] py-4 px-6 flex flex-col gap-4 md:hidden shadow-lg"
+          className="absolute top-full left-0 w-full bg-paper border-b border-border py-4 px-6 flex flex-col gap-4 md:hidden shadow-lg"
         >
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
               onClick={() => setMobileMenuOpen(false)}
-              className="text-sm font-mono uppercase tracking-widest text-[#4A4A4A] hover:text-[#FF4E00] transition-colors py-2 border-b border-[#D1CDC4]/30"
+              className="text-sm font-mono uppercase tracking-widest text-muted hover:text-accent transition-colors py-2 border-b border-border/30"
             >
               {link.name}
             </a>
