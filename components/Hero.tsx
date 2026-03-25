@@ -1,3 +1,5 @@
+'use client';
+
 import { motion } from 'motion/react';
 import { useTypewriter } from '@/hooks/use-typewriter';
 import { ArrowDown } from 'lucide-react';
