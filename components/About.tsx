@@ -29,7 +29,6 @@ export default function About() {
             <h2 className="font-serif text-5xl md:text-7xl font-bold tracking-tighter text-[#1A1A1A] mb-8">
               Still figuring it out.
             </h2>
-
             <div className="font-sans text-lg md:text-xl text-[#4A4A4A] leading-relaxed space-y-6">
               <p>
                 I&apos;m Nolan &mdash; a 15-year-old freshman from Maple Grove, Minnesota. I spend a good
