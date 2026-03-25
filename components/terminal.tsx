@@ -9,7 +9,7 @@ type Log = { id: string; type: "input" | "output" | "error"; text: string | Reac
 
 const fileSystem: Record<string, string> = {
   "skills.txt": "Systems Programming, CPU Architecture, React/Next.js, Python, Rust, C\n",
-  "about.txt": "Nolan Robert Idle\n15yo Developer & Athlete\nMinneapolis, MN\n",
+  "about.txt": "Nolan Idle\n15yo Developer & Problem Solver\nMinneapolis, MN\n",
   "contact.txt": "Email: nolan@example.com\nGitHub: @nolanidle\n"
 };
 

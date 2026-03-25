@@ -25,8 +25,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Nolan Robert Idle | Developer & Builder',
-  description: 'Personal resume website for Nolan Robert Idle, a 15-year-old high school programmer, track & cross country athlete, and honor roll student.',
+  title: 'Nolan Idle | Developer & Problem Solver',
+  description: 'Personal resume website for Nolan Idle, a 15-year-old high school developer, systems programmer, and problem solver.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

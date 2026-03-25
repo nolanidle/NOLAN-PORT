@@ -8,7 +8,7 @@ import TextReveal from './text-reveal';
 import MagneticButton from './magnetic-button';
 
 export default function Hero() {
-  const words = ['Systems Programmer.', 'Language Designer.', 'Athlete.', 'Builder.'];
+  const words = ['Systems Programmer.', 'Language Designer.', 'Problem Solver.', 'Builder.'];
   const typedText = useTypewriter(words, 100, 50, 2000);
 
   return (
@@ -28,14 +28,13 @@ export default function Hero() {
             </span>
           </div>
           
-          <h1 className="font-serif text-[15vw] md:text-[10vw] font-bold tracking-tighter text-ink mb-2 leading-[0.8] select-none mix-blend-difference dark:mix-blend-normal">
+          <h1 className="font-serif text-[15vw] md:text-[14vw] font-bold tracking-tighter text-ink mb-2 leading-[0.8] select-none mix-blend-difference dark:mix-blend-normal">
             <TextReveal text="NOLAN" className="block -ml-[4vw]" />
-            <TextReveal text="ROBERT" className="block text-accent -mr-[6vw]" />
-            <TextReveal text="IDLE" className="block -ml-[2vw]" />
+            <TextReveal text="IDLE" className="block text-accent -mr-[6vw]" />
           </h1>
           
           <p className="font-sans text-lg md:text-2xl text-muted max-w-2xl mx-auto mt-12 mb-12 text-balance">
-            Writing code, designing systems, and running trails in Minneapolis. Exploring the elegant intersection of software logic and physical endurance.
+            Writing code, designing systems, and building resilient software. My technical mindset maps directly to any dynamic professional challenge.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pointer-events-auto">

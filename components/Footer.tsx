@@ -64,7 +64,7 @@ export default function Footer() {
             className="flex flex-col items-start md:items-end justify-between h-full"
           >
             <div className="text-left md:text-right mb-12 md:mb-0">
-              <h3 className="font-serif text-2xl font-bold mb-3 text-[#F5F2ED]">Nolan Robert Idle</h3>
+              <h3 className="font-serif text-2xl font-bold mb-3 text-[#F5F2ED]">Nolan Idle</h3>
               <p className="font-mono text-xs uppercase tracking-widest text-[#8E8A83]">
                 Minneapolis, Minnesota<br />
                 Est. 2011

@@ -64,19 +64,16 @@ export default function AboutBento() {
             <h4 className="font-mono text-xs uppercase tracking-widest text-muted z-10">Local Status</h4>
           </motion.div>
 
-          {/* Running Stats */}
+          {/* Transferable Skills */}
           <motion.div 
             className="md:col-span-1 md:row-span-1 p-6 editorial-border bg-accent text-white flex flex-col justify-between hover-lift relative overflow-hidden group"
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once:true }} transition={{ delay: 0.2 }}
           >
-             <h4 className="font-mono text-xs uppercase tracking-widest opacity-80 mb-2 z-10">Varsity Track</h4>
+             <h4 className="font-mono text-xs uppercase tracking-widest opacity-80 mb-2 z-10">Transferable Value</h4>
              <div className="mb-auto z-10">
-                <span className="text-4xl font-serif font-bold">1600m</span>
-                <p className="font-mono text-sm opacity-90 mt-1">Personal Best: <strong className="text-paper">4:45</strong></p>
+                <span className="text-3xl font-serif font-bold leading-tight block mb-2">Applied Logic.</span>
+                <p className="font-sans text-xs opacity-90 leading-relaxed max-w-[90%]">Systems thinking seamlessly transfers to <strong>customer success, retail ops, and team coordination</strong>. If you can root-cause a memory leak, you can de-escalate complex routing issues.</p>
              </div>
-             <MagneticButton className="self-start text-xs border-paper/30 text-paper z-10 !px-4 !py-1 mt-auto group-hover:bg-white group-hover:text-accent">
-                <a href="#athletics">Athletics <ArrowRight size={12} className="inline ml-1" /></a>
-             </MagneticButton>
              <Wind className="absolute -bottom-4 -right-4 opacity-30 group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform duration-500" size={100} />
           </motion.div>
 

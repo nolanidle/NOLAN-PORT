@@ -19,7 +19,7 @@ export default function Resume() {
               Curriculum Vitae
             </h2>
             <p className="font-mono text-sm uppercase tracking-widest text-[#8E8A83] ruled-line pb-2 inline-block">
-              Nolan Robert Idle
+              Nolan Idle
             </p>
           </div>
           
@@ -40,10 +40,10 @@ export default function Resume() {
           <div className="border-b-4 border-[#1A1A1A] pb-8 mb-12 text-center md:text-left flex flex-col md:flex-row justify-between items-end gap-6">
             <div>
               <h1 className="font-serif text-4xl md:text-6xl font-bold text-[#1A1A1A] uppercase tracking-tighter mb-2">
-                Nolan R. Idle
+                Nolan Idle
               </h1>
               <p className="font-mono text-sm uppercase tracking-widest text-[#8E8A83]">
-                Developer • Language Designer • Athlete
+                Developer • Language Designer
               </p>
             </div>
             <div className="font-mono text-xs text-[#4A4A4A] text-right space-y-1">
@@ -59,7 +59,7 @@ export default function Resume() {
               Summary
             </h3>
           <p className="font-sans text-base text-[#4A4A4A] leading-relaxed">
-            Self-taught software developer, 15 years old, with a focus on JavaScript, Python, and systems programming. Creator of BulletPROOF, an AI-powered news verification engine currently in alpha. I enjoy exploring low-level computing, CPU architecture, and building things from scratch to understand how they work. Currently balancing high school academics (Honor Roll), varsity athletics (Track &amp; Cross Country), and independent software development.
+            Self-taught software developer, 15 years old, with a focus on JavaScript, Python, and systems programming. Creator of BulletPROOF, an AI-powered news verification engine currently in alpha. I enjoy exploring low-level computing, CPU architecture, and building things from scratch to understand how they work. Currently balancing high school academics (Honor Roll) and independent software development. The problem-solving mindset I've developed directly applies to fast-paced professional environments, customer support, and logic-based operations.
           </p>
           </div>
 
@@ -127,8 +127,6 @@ export default function Resume() {
                 Activities
               </h3>
               <ul className="list-disc list-inside font-sans text-sm text-[#4A4A4A] space-y-2">
-                <li>Varsity Track & Field</li>
-                <li>Varsity Cross Country</li>
                 <li>Self-directed Computer Science Research</li>
               </ul>
             </div>

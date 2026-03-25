@@ -21,7 +21,6 @@ export default function Experience() {
       highlight: true,
       events: [
         { title: 'Sophomore Year', detail: 'Minneapolis, MN — Honor Roll', tag: 'Academic' },
-        { title: 'Varsity Track & Field', detail: 'Spring season in progress', tag: 'Athletic' },
         { title: 'BulletPROOF', detail: 'Approaching beta launch', tag: 'Project' },
         { title: 'RIFT & IDLE', detail: 'Active development continues', tag: 'Project' },
       ],
@@ -30,7 +29,6 @@ export default function Experience() {
       period: '2025',
       highlight: false,
       events: [
-        { title: 'Varsity Cross Country', detail: 'Completed fall season', tag: 'Athletic' },
         { title: 'Started RIFT', detail: 'Custom programming language begun', tag: 'Project' },
         { title: 'CPU Architecture Deep Dive', detail: 'Started exploring low-level computing', tag: 'Learning' },
         { title: 'IDLE Concept Born', detail: 'Began researching CPU-native AI', tag: 'Research' },
@@ -42,7 +40,6 @@ export default function Experience() {
       events: [
         { title: 'BulletPROOF Started', detail: 'First major AI-powered project', tag: 'Project' },
         { title: 'Freshman Year', detail: 'Honor Roll — first year of high school', tag: 'Academic' },
-        { title: 'First Cross Country Season', detail: 'Joined the high school team', tag: 'Athletic' },
         { title: 'JavaScript Deep Dive', detail: 'Moved beyond basics into real projects', tag: 'Learning' },
       ],
     },
